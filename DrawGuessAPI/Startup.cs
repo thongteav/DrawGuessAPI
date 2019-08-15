@@ -74,7 +74,11 @@ namespace DrawGuessAPI
             }
             
             app.UseHttpsRedirection();
-            app.UseCors(options => options.WithOrigins("http://localhost:3000"));
+            app.UseCors(options => 
+                options.WithOrigins("*")
+                    .WithMethods("GET", "POST", "PUT", "PATCH", "HEAD", "OPTIONS")
+                    .WithHeaders("Access-Control-Allow-Headers", "Origin,Accept", "X-Requested-With", "Content-Type", "Access-Control-Request-Method", "Access-Control-Request-Headers")
+            );
             app.UseMvc();
         }
     }
