@@ -1,0 +1,14 @@
+C:\Users\thong\source\repos\DrawGuessAPI\DrawGuessAPI\bin\Debug\netcoreapp2.2\DrawGuessAPI.deps.json
+C:\Users\thong\source\repos\DrawGuessAPI\DrawGuessAPI\bin\Debug\netcoreapp2.2\DrawGuessAPI.runtimeconfig.json
+C:\Users\thong\source\repos\DrawGuessAPI\DrawGuessAPI\bin\Debug\netcoreapp2.2\DrawGuessAPI.runtimeconfig.dev.json
+C:\Users\thong\source\repos\DrawGuessAPI\DrawGuessAPI\bin\Debug\netcoreapp2.2\DrawGuessAPI.dll
+C:\Users\thong\source\repos\DrawGuessAPI\DrawGuessAPI\bin\Debug\netcoreapp2.2\DrawGuessAPI.pdb
+C:\Users\thong\source\repos\DrawGuessAPI\DrawGuessAPI\obj\Debug\netcoreapp2.2\DrawGuessAPI.csprojAssemblyReference.cache
+C:\Users\thong\source\repos\DrawGuessAPI\DrawGuessAPI\obj\Debug\netcoreapp2.2\DrawGuessAPI.csproj.CoreCompileInputs.cache
+C:\Users\thong\source\repos\DrawGuessAPI\DrawGuessAPI\obj\Debug\netcoreapp2.2\DrawGuessAPI.RazorAssemblyInfo.cache
+C:\Users\thong\source\repos\DrawGuessAPI\DrawGuessAPI\obj\Debug\netcoreapp2.2\DrawGuessAPI.RazorAssemblyInfo.cs
+C:\Users\thong\source\repos\DrawGuessAPI\DrawGuessAPI\obj\Debug\netcoreapp2.2\DrawGuessAPI.AssemblyInfoInputs.cache
+C:\Users\thong\source\repos\DrawGuessAPI\DrawGuessAPI\obj\Debug\netcoreapp2.2\DrawGuessAPI.AssemblyInfo.cs
+C:\Users\thong\source\repos\DrawGuessAPI\DrawGuessAPI\obj\Debug\netcoreapp2.2\DrawGuessAPI.RazorTargetAssemblyInfo.cache
+C:\Users\thong\source\repos\DrawGuessAPI\DrawGuessAPI\obj\Debug\netcoreapp2.2\DrawGuessAPI.dll
+C:\Users\thong\source\repos\DrawGuessAPI\DrawGuessAPI\obj\Debug\netcoreapp2.2\DrawGuessAPI.pdb
