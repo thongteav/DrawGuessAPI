@@ -13052,11 +13052,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thong\\source\\repos\\DrawGuessAPI\\DrawGuessAPI\\DrawGuessAPI.csproj",
+      "projectUniqueName": "C:\\Users\\thong\\Desktop\\DrawGuessAPI\\DrawGuessAPI\\DrawGuessAPI.csproj",
       "projectName": "DrawGuessAPI",
-      "projectPath": "C:\\Users\\thong\\source\\repos\\DrawGuessAPI\\DrawGuessAPI\\DrawGuessAPI.csproj",
+      "projectPath": "C:\\Users\\thong\\Desktop\\DrawGuessAPI\\DrawGuessAPI\\DrawGuessAPI.csproj",
       "packagesPath": "C:\\Users\\thong\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thong\\source\\repos\\DrawGuessAPI\\DrawGuessAPI\\obj\\",
+      "outputPath": "C:\\Users\\thong\\Desktop\\DrawGuessAPI\\DrawGuessAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
