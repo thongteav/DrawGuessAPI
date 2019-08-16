@@ -17,5 +17,25 @@ namespace DrawGuessAPI.CentralHub
         {
             await Clients.All.SendAsync("UpdateRoomList");
         }
+
+        public async Task EnterRoom()
+        {
+            await Clients.All.SendAsync("AddToRoom");
+        }
+
+        public async Task ExitRoom()
+        {
+            await Clients.All.SendAsync("RemoveFromRoom");
+        }
+
+        public async Task SendChat()
+        {
+            await Clients.All.SendAsync("UpdateChat");
+        }
+
+        public async Task Draw()
+        {
+            await Clients.All.SendAsync("UpdateDraw");
+        }
     }
 }
