@@ -80,7 +80,7 @@ namespace DrawGuessAPI
             app.UseHttpsRedirection();
             app.UseCors(builder =>
             {
-                builder.WithOrigins("*")
+                builder.WithOrigins("http://localhost:3000", "https://drawguessapp.azurewebsites.net")
                     .AllowAnyHeader()
                     .AllowAnyMethod()
                     .AllowCredentials();
