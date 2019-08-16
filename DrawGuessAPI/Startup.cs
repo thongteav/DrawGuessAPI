@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DrawGuessAPI.CentralHub;
 using DrawGuessAPI.Model;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,6 +28,9 @@ namespace DrawGuessAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Registering Azure SignalR service
+            services.AddSignalR();
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2).AddJsonOptions(
@@ -43,7 +47,7 @@ namespace DrawGuessAPI
                     Contact = new Contact
                     {
                         Name = "Draw&Guess",
-                        Url = "https://github.com/thongteav/WhatAreYouDrawing/tree/master/what-are-you-drawing"
+                        Url = "https://github.com/thongteav/WhatAreYouDrawing/"
                     },
                 });
             });
@@ -74,11 +78,21 @@ namespace DrawGuessAPI
             }
             
             app.UseHttpsRedirection();
-            app.UseCors(options => 
-                options.WithOrigins("*")
-                    .WithMethods("GET", "POST", "PUT", "PATCH", "HEAD", "OPTIONS")
-                    .WithHeaders("Access-Control-Allow-Headers", "Origin,Accept", "X-Requested-With", "Content-Type", "Access-Control-Request-Method", "Access-Control-Request-Headers")
-            );
+            app.UseCors(builder =>
+            {
+                builder.WithOrigins("*")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowCredentials();
+            });
+
+            // SignalR
+            app.UseFileServer();
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<SignalrHub>("/hub");
+            });
+
             app.UseMvc();
         }
     }
